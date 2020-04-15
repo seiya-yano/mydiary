@@ -1,3 +1,52 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.backimage{
+  background: url('gorimepresetV8.jpg') fixed;
+  background-size: cover;
+}
+.header {
+  height: 100vh;
+  background-color: rgba(25, 25, 120, 0.9);
+  padding: 170px 30px 80px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.site-title {
+  margin: 50px;
+  font-size: 4.5rem;
+}
+.registration {
+  display: inline-block;
+  width: 450px;
+  border-radius: 4px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.registration-green {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 4px;
+  background-color: #99FF00;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem
+}
+.registration-orange {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 4px;
+  background-color: #f1b400;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem
+}

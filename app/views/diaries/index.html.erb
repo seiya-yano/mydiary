@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>my_page</h1>
-<p><%= current_user.name %></p>
-<p class="text-right"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></p>
-
+<h1><%= current_user.name %>のpage</h1>
 
 <table>
   <thead>
@@ -21,9 +18,9 @@
         <td><%= diary.created_at %></td>
         <td><%= diary.updated_at %></td>
         <td><%= diary.title %></td>
-        <td><%= link_to '詳しく見る', diary %></td>
-        <td><%= link_to '日記内容を更新する', edit_diary_path(diary) %></td>
-        <td><%= link_to '日記を消去する', diary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '詳細', diary %></td>
+        <td><%= link_to '更新', edit_diary_path(diary) %></td>
+        <td><%= link_to '削除', diary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +28,6 @@
 
 <br>
 
-<%= link_to 'New Diary', new_diary_path %>
+<%= link_to '日記を作成する', new_diary_path %>
+
+<p class="text-right"><%= link_to "ログアウトする", destroy_user_session_path, method: :delete %></p>

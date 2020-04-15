@@ -4,7 +4,7 @@ class DiariesController < ApplicationController
   # GET /diaries
   # GET /diaries.json
   def index
-    @diaries = current_user.diaries.order('id DESC').limit(20)
+    @diaries = current_user.diaries.order('id DESC')
   end
 
   # GET /diaries/1
@@ -25,7 +25,6 @@ class DiariesController < ApplicationController
   # POST /diaries.json
   def create
     @diary = current_user.diaries.build(diary_params)
-    binding.pry
     if @diary.save
       redirect_to diaries_path, notice: 'diary was successfully created.'
     else
@@ -38,7 +37,7 @@ class DiariesController < ApplicationController
   def update
     respond_to do |format|
       if @diary.update(diary_params)
-        format.html { redirect_to @diary, notice: 'Diary was successfully updated.' }
+        format.html { redirect_to @diary, notice: '更新完了しました！' }
         format.json { render :show, status: :ok, location: @diary }
       else
         format.html { render :edit }

@@ -26,7 +26,7 @@ class DiariesController < ApplicationController
   def create
     @diary = current_user.diaries.build(diary_params)
     if @diary.save
-      redirect_to diaries_path, notice: 'diary was successfully created.'
+      redirect_to diaries_path, notice: '日記作成しました！'
     else
       render :new
     end
@@ -51,7 +51,7 @@ class DiariesController < ApplicationController
   def destroy
     @diary.destroy
     respond_to do |format|
-      format.html { redirect_to diaries_url, notice: 'Diary was successfully destroyed.' }
+      format.html { redirect_to diaries_url, notice: '日記を削除しました！' }
       format.json { head :no_content }
     end
   end

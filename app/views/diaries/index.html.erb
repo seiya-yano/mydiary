@@ -1,23 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= current_user.name %>のpage</h1>
+<h1><%= current_user.name %>の日記</h1>
 
 <table>
-  <thead>
+  <thead class="scrollHead">
     <tr>
-      <th>作成日付</th>
-      <th>更新日付</th>
-      <th>日記タイトル</th>
+      <th class="created">作成日付</th>
+      <th class="updated">更新日付</th>
+      <th class="title">日記タイトル</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="scrollBody">
     <% @diaries.each do |diary| %>
       <tr>
-        <td><%= diary.created_at %></td>
-        <td><%= diary.updated_at %></td>
-        <td><%= diary.title %></td>
+        <td class="created"><%= diary.created_at %></td>
+        <td class="updated"><%= diary.updated_at %></td>
+        <td class="title"><%= diary.title %></td>
         <td><%= link_to '詳細', diary %></td>
         <td><%= link_to '更新', edit_diary_path(diary) %></td>
         <td><%= link_to '削除', diary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,6 +25,7 @@
     <% end %>
   </tbody>
 </table>
+<input type="date">
 
 <br>
 

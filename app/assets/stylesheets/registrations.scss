@@ -1,0 +1,35 @@
+.head {
+  height: 100vh;
+  background-color: rgba(25, 25, 120, 0.9);
+  padding: 170px 30px 80px;
+  color: #333333;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.box {
+  width: 450px;
+  height: 450px;
+  margin: 60px auto 0;
+  border-radius: 4px;
+  border: 1px black solid;
+  background-color: aliceblue;
+}
+
+.box-login{
+  width: 450px;
+  height: 400px;
+  margin: 60px auto 0;
+  border-radius: 4px;
+  border: 1px black solid;
+  background-color: aliceblue;
+}
+
+h2{
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  padding: 0 0 10px 10px;
+  border-bottom: 1px black solid;
+  text-align: left;
+}

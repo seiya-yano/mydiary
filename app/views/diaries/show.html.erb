@@ -1,19 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="back-image">
+  <div class="back-color_new">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= current_user.name %>
-</p>
+    <div class="show">
+    <p>
+      <strong>作成日付:</strong>
+      <%= @diary.created_at %>
+    </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @diary.title %>
-</p>
+    <p>
+      <strong>Title:</strong>
+      <%= @diary.title %>
+    </p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @diary.text %>
-</p>
-
-<%= link_to '編集', edit_diary_path(@diary) %> |
-<%= link_to '一覧へ戻る', diaries_path %>
+    <p>
+      <strong>Text:</strong>
+      <%= @diary.text %>
+    </p>
+    </div>
+    <div class="marginleft">
+      <%= link_to '編集', edit_diary_path(@diary) %> |
+      <%= link_to '一覧へ戻る', diaries_path %>
+    </div>
+  </div>
+</div>

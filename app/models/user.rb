@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   validates :name ,presence: true
   has_many :diaries, dependent: :destroy
+
+  with_options presence: true do
+    validates :name, length: { maximum: 15 }
+  end
+  
 end

@@ -4,7 +4,12 @@ class DiariesController < ApplicationController
   # GET /diaries
   # GET /diaries.json
   def index
-    @diaries = current_user.diaries.order('id DESC')
+    # @diaries = current_user.diaries.order('id DESC')
+    if params[:title]
+      @diaries = current_user.diaries.where('title LIKE ?', "%#{params[:title]}%")
+    else
+      @diaries = current_user.diaries.order('id DESC').limit(20)
+    end
   end
 
   # GET /diaries/1

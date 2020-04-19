@@ -2,6 +2,18 @@
   background: url('TKL20404027.jpg') fixed;
   background-size: cover;
 }
+.back-color{
+  height: 100vh;
+  background-color: rgba(231, 158, 99, 0.9);
+  padding: 100px 30px 80px;
+  color: #575756;
+  font-size: 0.8rem;
+  padding: 0  100px 0 100px;
+  .registration{
+    display: table-cell;
+    text-align: center;
+  }
+}
 body {
   background-color: #fff;
   color: #333;
@@ -87,14 +99,16 @@ tbody.scrollBody{
   height:100px;
 }
 th {
-  padding-bottom: 5px;
+  padding: 0 5px 5px;
 }
 
 td {
   padding: 0 5px 7px;
+  height: 30px;
 }
 td,th{
   table-layout:fixed;
+  border: solid 1px; 
 }
 .created{
   width:200px;
@@ -104,4 +118,29 @@ td,th{
 }
 .title{
   width:200px;
+}
+.blank{
+  width:111px;
+}
+table {
+  border-collapse:  collapse; /* セルの線を重ねる */ 
+  table-layout: fixed;        /* セルの幅計算指定 */
+  background-color: azure;
+}
+.yokonarabi{
+  display: inline-block;
+  height: 100px;
+  width: 250px;
+  margin: 10px 30px 10px 30px;
+}
+.tableblock{
+  display: inline-block;
+  width: 800px;
+  height: 200px;
+  margin: 0 0 0 44px;
+}
+
+.mydiary{
+  height: 100px;
+  line-height: 100px
 }

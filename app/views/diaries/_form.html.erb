@@ -10,18 +10,20 @@
       </ul>
     </div>
   <% end %>
+  <div class="new-edit">
+    <div class="field">
+      <%= form.label :title %>
+      <%= form.text_field :title, size: "68x5", class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, size: "100x5", class: "form-control" %>
+    <div class="field">
+      <%= form.label :text %>
+      <%= form.text_area :text, size: "68x20", class: "form-control"  %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :text %>
-    <%= form.text_area :text, size: "100x20", class: "form-control"  %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="marginauto">
+    <div class="actions">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>

@@ -1,10 +1,11 @@
 <div class="back-image">
-  <div class="back-color_new">
+  <div class="back-color_new-edit">
     <h1>Editing Diary</h1>
 
     <%= render 'form', diary: @diary %>
-
-    <%= link_to '詳細', @diary %> |
-    <%= link_to '一覧へ戻る', diaries_path %>
+    <div class="marginauto">
+      <%= link_to '詳細', @diary %> |
+      <%= link_to '一覧へ戻る', diaries_path %>
+    </div>
   </div>
 <div>

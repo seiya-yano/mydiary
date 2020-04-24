@@ -10,6 +10,12 @@
         <%= text_field_tag(:title) %>
         <%= submit_tag("検索") %> <%= link_to 'Clear', diaries_path %>
       <% end %>
+
+      <%= form_with url:'/diaries', method: :get, local: true do |f| %>
+        <%= label_tag(:created_at, "日付で検索") %>
+        <%= date_field_tag(:created_at) %>
+        <%= submit_tag("検索") %> <%= link_to 'Clear', diaries_path %>
+      <% end %>
     </div>
 
     <div class="tableblock">

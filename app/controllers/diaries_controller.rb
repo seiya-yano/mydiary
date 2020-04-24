@@ -7,6 +7,8 @@ class DiariesController < ApplicationController
     # @diaries = current_user.diaries.order('id DESC')
     if params[:title]
       @diaries = current_user.diaries.where('title LIKE ?', "%#{params[:title]}%")
+    elsif params[:created_at].present?
+      @diaries = current_user.diaries.where(created_at: params[:created_at].in_time_zone.all_day)
     else
       @diaries = current_user.diaries.order('id DESC').limit(20)
     end

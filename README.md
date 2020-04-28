@@ -49,7 +49,7 @@ https://mydiary-enjoy.herokuapp.com/
 　検索機能を付け加える際、初めはタイトルからの検索のみだったが、後に、日付からの検索は付け加えた方がいいと感じた為付け加えた。日付の検索の際、カレンダーから日付を選択できる様にした為視覚的にわかりやすくなった。  
   
   
-・使用技術(開発環境)  
+# 使用技術(開発環境)  
 　Ruby/Ruby on Rails/MySQL/Html/Css/Github/HEROKU/Visual Studio Code  
   
   

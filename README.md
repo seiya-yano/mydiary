@@ -7,6 +7,7 @@
 ・本番環境(デプロイ先　テストアカウント＆ID)  
 ○デプロイ先URL  
 https://mydiary-enjoy.herokuapp.com/  
+  
 ○テスト用ユーザー  
  名前			tesuto  
  メールアドレス	tesuto@gmail.com  
@@ -16,7 +17,7 @@ https://mydiary-enjoy.herokuapp.com/
 　今までチームとしての開発は経験したが、個人開発にはまだ手がつけられていなかった為、アプリ開発に入りやすく感じた日記アプリから手をつけ、徐々に機能を付け足していきたいと考えた。  
   
   ・DEMO  
-　トップページ(https://mydiary-enjoy.herokuapp.com/)  
+  トップページ(https://mydiary-enjoy.herokuapp.com/)  
   
   ログイン(https://mydiary-enjoy.herokuapp.com/users/sign_in)  
   

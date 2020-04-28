@@ -1,24 +1,16 @@
-# README
+・アプリ名
+　mydiary
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+・概要　
+　本アプリでは、ユーザーの登録を行うことによって各ユーザーごとの日記を作成可能です。作成した日記はマイページ画面から参照可能であり、また、編集、削除、検索が可能です。
 
-Things you may want to cover:
+・本番環境(デプロイ先　テストアカウント＆ID)
+○デプロイ先URL
+https://mydiary-enjoy.herokuapp.com/
+○テスト用ユーザー
+ 名前			tesuto
+ メールアドレス	tesuto@gmail.com
+ パスワード		15421sss
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+・制作背景
+　今までチームとしての開発は経験したが、個人開発にはまだ手がつけられていなかった為、アプリ開発に入りやすく感じた日記アプリから手をつけ、徐々に機能を付け足していきたいと考えた。

@@ -3,19 +3,18 @@
     <p id="notice"><%= notice %></p>
 
     <div class="show">
-    <p>
+    <p class="showp">
       <strong>作成日付:</strong>
       <%= @diary.created_at %>
     </p>
 
-    <p>
+    <p class="showp">
       <strong>Title:</strong>
       <%= @diary.title %>
     </p>
 
-    <p>
-      <strong>Text:</strong>
-      <%= @diary.text %>
+    <p class="textauto">
+      <%=safe_join(@diary.text.split("\n"),tag(:br))%>
     </p>
     </div>
     <div class="marginleft">
